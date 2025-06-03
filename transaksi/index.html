@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>LEGO F1 - Transaksi</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #1a1a1a;
+        }
+        .header {
+            background-color: #e60012;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .navbar {
+            background-color: #1a1a1a;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            color: #e60012;
+        }
+        .main {
+            padding: 40px 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .main h2 {
+            text-align: center;
+            color: #e60012;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, select, textarea {
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        button {
+            background-color: #e60012;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #b0000d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">FORM TRANSAKSI</div>
+
+<div class="navbar">
+    <a href="./index.html">Home</a>
+    <a href="index.html">Transaksi</a>
+    <a href="./tentang/index.html">Tentang Kami</a>
+</div>
+
+<div class="main">
+    <h2>Isi Data Pembelian</h2>
+    <form>
+        <input type="text" placeholder="Nama Lengkap" required>
+        <textarea placeholder="Alamat Pengiriman" required></textarea>
+        <select required>
+            <option value="">Pilih Produk</option>
+            <option value="lego1">LEGO F1 Speed</option>
+            <option value="lego2">LEGO Jet Red</option>
+            <option value="lego3">LEGO Monster Truck</option>
+        </select>
+        <input type="number" min="1" placeholder="Jumlah" required>
+        <select required>
+            <option value="">Metode Pembayaran</option>
+            <option value="transfer">Transfer Bank</option>
+            <option value="cod">Bayar di Tempat (COD)</option>
+            <option value="ewallet">E-Wallet (OVO, Gopay)</option>
+        </select>
+        <button type="submit">Kirim</button>
+    </form>
+</div>
+
+</body>
+</html>
